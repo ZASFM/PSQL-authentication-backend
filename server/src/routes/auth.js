@@ -1,8 +1,7 @@
 const express=require('express');
 const router=express.Router();
+const {getUsers}=require('../controllers/auth');
 
-router.get('/',(req,res)=>{
-   res.send('Home')
-})
+router.get('/get_users',getUsers);
 
 module.exports=router;
