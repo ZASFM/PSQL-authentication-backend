@@ -4,6 +4,7 @@ const {PORT}=require('./constants/index');
 const authRouter=require('./routes/auth');
 const cors=require('cors');
 
+app.use(express.json());
 app.use(cors({
    origin:'http:localhost:8000'
 }));
